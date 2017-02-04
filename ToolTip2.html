@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="Scripts/jquery.tipsy.js"></script>
+        <link href="Styles/tipsy.css" rel="stylesheet" type="text/css" />
+        <link href="Styles/MyStyles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="chart"></div>
+        <script type="text/javascript">
+            
+            
+            var w = 1000, h = 600;
+            var colors = d3.scale.category20();
+            
+            var vis = d3.select("#chart").append("svg:svg")
+            .attr("width", w)
+            .attr("height", h)
+            
+            var data = d3.range(50).map(function(i) {
+                                        return { i:i, x:(Math.random()*w).toFixed(1), y:(Math.random()*h).toFixed(0), r:Math.random()*30 }
+                                        });
+            
+        
+            var tooltip = d3.select("body")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("position", "absolute")
+            .style("z-index", "10")
+            .style("visibility", "hidden")
+            //.text("a simple tooltip");
+
+            vis.selectAll("circle")
+            .data(data).enter().append("svg:circle")
+            .attr("stroke", "black")
+            .attr("fill", function(d, i) { return colors((d.r/3).toFixed(0) + 1); })    //color by radius
+            //.attr("fill", function(d, i) { return colors(i); })
+            .attr("cx", function(d, i) { return d.x; })
+            .attr("cy", function(d, i) { return d.y; })
+            .attr("r", function(d, i) { return d.r; })
+            .on("mouseover", function(d, i){return (tooltip.style("visibility", "visible"), tooltip.text("YOW! " + d.x + " - " + "Y = " + d.y));})
+            .on("mousemove", function(){return tooltip.style("top",
+                                                             (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+            .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+
+    
+        
+        
+            vis.selectAll("text")
+            .data(data).enter().append("text")
+            .attr("x", function(d, i) { return d.x; })
+            .attr("y", function(d, i) { return d.y; })
+            .attr("dy", ".35em")
+            .text( function(d, i) {return d.i;})
+            .attr("font-family", "sans-serif")
+            .attr("font-size", "10px")
+            .attr("fill", "black");
+
+            
+            </script>
+        
+    </body>
+</html>

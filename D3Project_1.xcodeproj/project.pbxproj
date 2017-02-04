@@ -6,12 +6,61 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		5D3CA2C01CB1E14D0002BA77 /* tipsy.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = tipsy.css; path = Styles/tipsy.css; sourceTree = "<group>"; };
+		5DFF6E581C722E1B006DBE76 /* project_1.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = project_1.html; sourceTree = "<group>"; };
+		5DFF6E5B1C723239006DBE76 /* d3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = d3.js; path = Scripts/d3.js; sourceTree = "<group>"; };
+		5DFF6E5D1C723596006DBE76 /* Plot1.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Plot1.html; sourceTree = "<group>"; };
+		5DFF6E5F1C72540C006DBE76 /* ToolTip2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ToolTip2.html; sourceTree = "<group>"; };
+		5DFF6E631C726F53006DBE76 /* ToolTip1.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ToolTip1.html; sourceTree = "<group>"; };
+		5DFF6E651C729380006DBE76 /* d3.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = d3.min.js; path = Scripts/d3.min.js; sourceTree = "<group>"; };
+		5DFF6E661C729380006DBE76 /* jquery.tipsy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = jquery.tipsy.js; path = Scripts/jquery.tipsy.js; sourceTree = "<group>"; };
+		5DFF6E681C7293DE006DBE76 /* MultiLinePlot.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = MultiLinePlot.html; sourceTree = "<group>"; };
+		5DFF6E6A1C7296AB006DBE76 /* TempData1.tsv */ = {isa = PBXFileReference; lastKnownFileType = text; name = TempData1.tsv; path = DataFiles/TempData1.tsv; sourceTree = "<group>"; };
+		5DFF6E6D1C742354006DBE76 /* MyStyles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = MyStyles.css; path = Styles/MyStyles.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		5DFF6E511C722DB7006DBE76 = {
 			isa = PBXGroup;
 			children = (
+				5DFF6E671C7293B6006DBE76 /* DataFiles */,
+				5DFF6E5C1C7232E4006DBE76 /* Scripts */,
+				5DFF6E6B1C7421A7006DBE76 /* Styles */,
+				5DFF6E681C7293DE006DBE76 /* MultiLinePlot.html */,
+				5DFF6E5D1C723596006DBE76 /* Plot1.html */,
+				5DFF6E581C722E1B006DBE76 /* project_1.html */,
+				5DFF6E631C726F53006DBE76 /* ToolTip1.html */,
+				5DFF6E5F1C72540C006DBE76 /* ToolTip2.html */,
 			);
 			sourceTree = "<group>";
+		};
+		5DFF6E5C1C7232E4006DBE76 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5DFF6E5B1C723239006DBE76 /* d3.js */,
+				5DFF6E651C729380006DBE76 /* d3.min.js */,
+				5DFF6E661C729380006DBE76 /* jquery.tipsy.js */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		5DFF6E671C7293B6006DBE76 /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5DFF6E6A1C7296AB006DBE76 /* TempData1.tsv */,
+			);
+			name = DataFiles;
+			sourceTree = "<group>";
+		};
+		5DFF6E6B1C7421A7006DBE76 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				5D3CA2C01CB1E14D0002BA77 /* tipsy.css */,
+				5DFF6E6D1C742354006DBE76 /* MyStyles.css */,
+			);
+			name = Styles;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -19,7 +68,7 @@
 		5DFF6E521C722DB7006DBE76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 			};
 			buildConfigurationList = 5DFF6E551C722DB7006DBE76 /* Build configuration list for PBXProject "D3Project_1" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -40,12 +89,48 @@
 		5DFF6E561C722DB7006DBE76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		5DFF6E571C722DB7006DBE76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
