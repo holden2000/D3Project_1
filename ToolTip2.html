@@ -13,14 +13,13 @@
             
             //this is a test
             var w = 1200, h = 600;
-            
             var colors = d3.scale.category20();
             
             var vis = d3.select("#chart").append("svg:svg")
             .attr("width", w)
             .attr("height", h)
             
-            var data = d3.range(50).map(function(i) {
+            var data = d3.range(40).map(function(i) {
                                         return { i:i, x:(Math.random()*w).toFixed(1), y:(Math.random()*h).toFixed(0), r:(Math.random()*30)+5 }
                                         });
             
