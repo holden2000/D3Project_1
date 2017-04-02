@@ -19,7 +19,7 @@
             .attr("width", w)
             .attr("height", h)
             
-            var data = d3.range(40).map(function(i) {
+            var data = d3.range(50).map(function(i) {
                                         return { i:i, x:(Math.random()*w).toFixed(1), y:(Math.random()*h).toFixed(0), r:(Math.random()*30)+5 }
                                         });
             
@@ -40,7 +40,7 @@
             .attr("cx", function(d, i) { return d.x; })
             .attr("cy", function(d, i) { return d.y; })
             .attr("r", function(d, i) { return d.r; })
-            .on("mouseover", function(d, i){return (tooltip.style("visibility", "visible"), tooltip.text("YOW! \r\n" + String.fromCharCode(13) + "X = " + d.x + " - " + "Y = " + d.y));})
+            .on("mouseover", function(d, i){return (tooltip.style("visibility", "visible"), tooltip.text("YOW! \r" + String.fromCharCode(10) + "X = " + d.x + " - " + "Y = " + d.y));})
             .on("mousemove", function(){return tooltip.style("top",
                                                              (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
             .on("mouseout", function(){return tooltip.style("visibility", "hidden");});

@@ -8,6 +8,11 @@
 
 /* Begin PBXFileReference section */
 		5D3CA2C01CB1E14D0002BA77 /* tipsy.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = tipsy.css; path = Styles/tipsy.css; sourceTree = "<group>"; };
+		5D3F85D51E919D6000B80790 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		5D3F85D61E919D6000B80790 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5D3F85D71E919D6000B80790 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		5D3F85D81E919D6000B80790 /* unemployment.tsv */ = {isa = PBXFileReference; lastKnownFileType = text; path = unemployment.tsv; sourceTree = "<group>"; };
+		5D3F85D91E919F3200B80790 /* ForceDrag.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = ForceDrag.html; sourceTree = "<group>"; };
 		5DFF6E581C722E1B006DBE76 /* project_1.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = project_1.html; sourceTree = "<group>"; };
 		5DFF6E5B1C723239006DBE76 /* d3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = d3.js; path = Scripts/d3.js; sourceTree = "<group>"; };
 		5DFF6E5D1C723596006DBE76 /* Plot1.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Plot1.html; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		5DFF6E511C722DB7006DBE76 = {
 			isa = PBXGroup;
 			children = (
+				5D3F85D91E919F3200B80790 /* ForceDrag.html */,
+				5D3F85D51E919D6000B80790 /* index.html */,
+				5D3F85D61E919D6000B80790 /* README.md */,
+				5D3F85D71E919D6000B80790 /* thumbnail.png */,
+				5D3F85D81E919D6000B80790 /* unemployment.tsv */,
 				5DFF6E671C7293B6006DBE76 /* DataFiles */,
 				5DFF6E5C1C7232E4006DBE76 /* Scripts */,
 				5DFF6E6B1C7421A7006DBE76 /* Styles */,
